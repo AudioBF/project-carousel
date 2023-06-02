@@ -1,0 +1,107 @@
+.images-slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.images-slider .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.images-slider .slide.show {
+    opacity: 1;
+}
+
+.slide-pink {
+    background-image: url(../images/pink-flowers.jpg);
+}
+
+.slide-green {
+    background-image: url(../images/green-flowers.jpg);
+}
+
+.slide-orange {
+    background-image: url(../images/mountains.jpg);
+}
+
+.slide-blue {
+    background-image: url(../images/lake.jpg);
+}
+
+.back-arrow, .forward-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
+.back-arrow {
+    left: 4%;
+    transform: rotate(180deg);
+}
+
+.forward-arrow {
+    right: 4%;
+}
+
+.back-arrow, .arrow-image, .forward-arrow, .arrow-image {
+    width: 50px;
+    height: 50px;
+}
+
+.opacity {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.content {
+    display: block;
+    background-color: #fff;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
+    border-radius: 10px;
+}
+
+.content .title {
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.content .text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.content .button {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.button.pink {
+    color: pink;
+}
+
+.button.green {
+    color: green;
+}
+
+.button.orange {
+    color: orange;
+}
+
+.button.blue {
+    color: blue;
+}
